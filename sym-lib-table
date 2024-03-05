@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 0)
+  (lib (name "DS3231-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/DS3231-eagle-import.kicad_sym")(options "")(descr ""))
+)
