@@ -7,6 +7,10 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "DS3231")
+		(date "2024-03-06")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(1 "In1.Cu" signal)
@@ -15964,7 +15968,7 @@
 		(uuid "6e21cb9c-de93-4898-ab91-1519529680d1")
 		(at 148.5011 103.2256 180)
 		(property "Reference" "B1"
-			(at -1.602 0.14 -0)
+			(at -1.602 0.14 0)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(uuid "37b8a559-58c6-40f9-829a-2f739860efc5")
@@ -15977,7 +15981,7 @@
 			)
 		)
 		(property "Value" "CR1220"
-			(at -1.602 -0.868 -0)
+			(at -1.602 -0.868 0)
 			(unlocked yes)
 			(layer "B.Fab")
 			(uuid "11e317a2-bef0-4c6e-9295-2ca2eb3d5905")
