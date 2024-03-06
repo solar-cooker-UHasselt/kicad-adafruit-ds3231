@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 2.5,
+          "height": 3.2,
+          "width": 3.2
         },
         "silk_line_width": 0.09999999999999999,
         "silk_text_italic": false,
@@ -52,7 +52,22 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "lib_footprint_mismatch|139600000|98650000|e651656e-6463-495c-ba84-1957c3128429|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|157400000|98650000|bee1cef1-a3ba-4ef7-8aa2-36357ade3d4d|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|138604836|104765702|908756e5-e351-4a71-8ed9-9c5f1d1701dc|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|139513547|102369125|eb721639-39b8-432c-84d4-14f53306465d|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|141841100|101523600|6237aa74-7d66-4bd8-b1a4-4314dc39e856|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|141841202|101529336|c1e1e99f-bff3-4615-80d4-26e992f881fe|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|141842969|104763782|2674fb48-bbf6-45e0-b6fe-b2f7a719de25|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|141842969|104763782|416f1b4d-80ec-453e-8820-f26c7707181e|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|155161100|101523601|6e8a5dc5-86a3-48a8-bce0-6b722941b867|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|155161100|104927600|fdfd1213-9da8-422a-9cee-517bcc366df7|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|156112228|102573369|4175799a-12c3-46e9-b847-3a3847e8e701|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|158340898|101529518|caf16d3e-7305-40bd-80b7-f50fe271097e|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|158340898|101529518|d94df3d8-e348-474c-9ee5-99c4ca696282|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|158341569|104865143|3f41edaa-6155-43c8-a6b6-87ba43bef41f|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
@@ -426,8 +441,12 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_footprint_libs": [
+      "external_library"
+    ],
+    "pinned_symbol_libs": [
+      "external_library"
+    ]
   },
   "meta": {
     "filename": "DS3231.kicad_pro",
