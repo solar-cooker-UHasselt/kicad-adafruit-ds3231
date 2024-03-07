@@ -2234,7 +2234,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10k"
 			(at 188.976 88.392 0)
 			(effects
 				(font
@@ -2764,7 +2764,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 148.59 80.01 0)
 			(effects
 				(font
@@ -3027,7 +3027,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 140.97 80.01 0)
 			(effects
 				(font
@@ -3164,7 +3164,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CONN RCPT 8POS 0.1 GOLD PCB"
+		(property "Description" "CONN HEADER VERT 8POS 2.54MM"
 			(at 124.46 99.06 0)
 			(effects
 				(font
@@ -3182,7 +3182,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "SSQ-108-01-G-S"
+		(property "MPN" "TSW-108-23-G-S"
 			(at 124.46 99.06 0)
 			(effects
 				(font
@@ -3200,7 +3200,7 @@
 				(hide yes)
 			)
 		)
-		(property "SPN" "SAM1180-08-ND"
+		(property "SPN" "612-TSW-108-23-G-S-ND"
 			(at 124.46 99.06 0)
 			(effects
 				(font
@@ -3268,7 +3268,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10k"
 			(at 181.356 88.646 0)
 			(effects
 				(font
