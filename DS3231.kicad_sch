@@ -1013,19 +1013,6 @@
 					)
 				)
 			)
-			(symbol "DS3231_0_1"
-				(rectangle
-					(start 0 20.32)
-					(end 15.24 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
 			(symbol "DS3231_1_0"
 				(pin passive line
 					(at -3.81 19.05 0)
@@ -1313,6 +1300,19 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+			(symbol "DS3231_1_1"
+				(rectangle
+					(start 0 20.32)
+					(end 15.24 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
 					)
 				)
 			)
@@ -2061,7 +2061,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "external_footprints:CR1220-SMD"
+		(property "Footprint" "external_footprints:CR1220"
 			(at 184.15 105.156 90)
 			(effects
 				(font
