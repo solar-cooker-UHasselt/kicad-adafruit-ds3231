@@ -2124,15 +2124,6 @@
 				(hide yes)
 			)
 		)
-		(property "Component package type" "/"
-			(at 184.15 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "725e95da-1306-4a5c-a1f1-48e7fe02fa6a")
 		)
@@ -2227,16 +2218,7 @@
 				(hide yes)
 			)
 		)
-		(property "SPN" "DS3231M+TRLTR-ND - Tape & Reel (TR)"
-			(at 152.4 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Component package type" "/"
+		(property "SPN" "DS3231M+TRLTR-ND"
 			(at 152.4 111.76 0)
 			(effects
 				(font
@@ -2449,15 +2431,6 @@
 			)
 		)
 		(property "SPN" "GPR080510K"
-			(at 191.77 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Component package type" "R_0805"
 			(at 191.77 87.63 0)
 			(effects
 				(font
@@ -2694,15 +2667,6 @@
 			)
 		)
 		(property "SPN" "GPC0805105"
-			(at 198.12 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Component package type" "C_0805"
 			(at 198.12 105.41 0)
 			(effects
 				(font
@@ -3208,15 +3172,6 @@
 				(hide yes)
 			)
 		)
-		(property "Component package type" "/"
-			(at 124.46 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "8e7f1a02-255a-4f38-933e-fd88264efee6")
 		)
@@ -3330,15 +3285,6 @@
 			)
 		)
 		(property "SPN" "GPR080510K"
-			(at 184.15 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Component package type" "R_0805"
 			(at 184.15 87.63 0)
 			(effects
 				(font
