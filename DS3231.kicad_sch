@@ -3228,7 +3228,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "887840f9-0e26-4f1d-983d-1b3afde2db8d")
 		(property "Reference" "U$2"
@@ -3539,7 +3539,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "a4b46ba2-c600-4ce0-a905-c8bdb3a41db6")
 		(property "Reference" "U$1"
