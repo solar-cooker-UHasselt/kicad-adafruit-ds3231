@@ -8,9 +8,11 @@ reads this file first and follows it where the two differ.
 Every commit leaves ERC and DRC no worse than the commit before it:
 
 ```bash
-kicad-cli sch erc --severity-all -o tmp/erc.rpt DS3231.kicad_sch
-kicad-cli pcb drc --severity-all --schematic-parity -o tmp/drc.rpt DS3231.kicad_pcb
+just check
 ```
+
+It runs ERC and DRC with `kicad-cli` and writes the reports to `tmp/`. For a change to
+the CI workflow, also run `just ci`.
 
 Compare the violation counts with the previous commit. A commit that fixes violations
 says which ones in its body.
