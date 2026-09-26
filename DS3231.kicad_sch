@@ -6,7 +6,12 @@
 	(paper "A4")
 	(title_block
 		(title "DS3231")
-		(date "2024-03-06")
+		(date "2026-09-26")
+		(rev "1.0")
+		(company "UHasselt, Solar Cooker")
+		(comment 1 "Based on the Adafruit DS3231 Precision RTC breakout")
+		(comment 2 "Design: Lowie Van Vyve")
+		(comment 3 "github.com/solar-cooker-UHasselt/kicad-adafruit-ds3231")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x08_Pin"
