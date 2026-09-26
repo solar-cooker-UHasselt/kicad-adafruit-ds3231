@@ -15,3 +15,6 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - run: kibot -c config.kibot.yml
+      - name: Job summary
+        if: always()
+        run: python3 .github/scripts/report-summary.py reports >> "$GITHUB_STEP_SUMMARY"

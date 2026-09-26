@@ -37,3 +37,6 @@ tmp/
 
 # KiCad local history
 .history/
+
+# KiBot reports
+reports/
