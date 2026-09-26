@@ -13,8 +13,8 @@
 	)
 	(rect
 		(name "")
-		(start 110.269 35.5422)
-		(end 2 2.0002)
+		(start 110 31)
+		(end 2 2)
 		(comment "rect around the title block")
 	)
 	(rect
@@ -169,11 +169,6 @@
 		(name "")
 		(pos 109 29)
 		(comment "Comment 2")
-	)
-	(tbtext "${COMMENT4}"
-		(name "")
-		(pos 109 32)
-		(comment "Comment 3")
 	)
 	(line
 		(name "")
