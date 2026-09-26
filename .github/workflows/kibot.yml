@@ -3,10 +3,10 @@ name: KiBot automation
 on:
   push:
     branches: [ main ]
-    paths:
-      - "*.sch"
-      - "*.kicad_pcb"
-      - "*.kicad_pro"
+    paths-ignore: [ "**.md" ]
+  pull_request:
+    paths-ignore: [ "**.md" ]
+  workflow_dispatch:
 
 jobs:
   drc:
