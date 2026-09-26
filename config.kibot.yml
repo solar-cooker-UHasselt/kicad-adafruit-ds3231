@@ -5,8 +5,8 @@ kibot:
 preflight:
   check_zone_fills: true
   erc:
-    format: JSON
+    format: JSON,HTML
     dir: reports
   drc:
-    format: JSON
+    format: JSON,HTML
     dir: reports

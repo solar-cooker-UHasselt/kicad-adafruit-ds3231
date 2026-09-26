@@ -15,6 +15,15 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - run: kibot -c config.kibot.yml
+      - name: Upload reports
+        id: upload
+        if: always() && !env.ACT  # act: the image has no Node.js for this action
+        uses: actions/upload-artifact@v7
+        with:
+          name: reports
+          path: reports/
       - name: Job summary
         if: always()
+        env:
+          ARTIFACT_URL: ${{ steps.upload.outputs.artifact-url }}
         run: python3 .github/scripts/report-summary.py reports >> "$GITHUB_STEP_SUMMARY"

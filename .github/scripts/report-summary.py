@@ -2,11 +2,13 @@
 
 Usage: python3 report-summary.py <report dir> >> "$GITHUB_STEP_SUMMARY"
 Reads <board>-erc.json and <board>-drc.json, as written by KiBot or kicad-cli.
+If ARTIFACT_URL is set, the summary links to the uploaded HTML reports.
 Report format: https://schemas.kicad.org/erc.v1.json and drc.v1.json
 """
 
 import html
 import json
+import os
 import sys
 from collections import Counter
 from pathlib import Path
@@ -86,11 +88,15 @@ def main(report_dir):
         for v in errors[:MAX_ERRORS]:
             print(f"- {describe(v)}")
         if len(errors) > MAX_ERRORS:
-            print(f"- … and {len(errors) - MAX_ERRORS} more")
+            print(f"- … and {len(errors) - MAX_ERRORS} more, see the HTML reports")
     if warnings:
         print("\n**Warnings per type**\n")
         for kind, count in warnings.most_common():
             print(f"- `{kind}`: {count}")
+
+    artifact_url = os.environ.get("ARTIFACT_URL")
+    if artifact_url:
+        print(f"\nFull HTML and JSON reports: [reports]({artifact_url})")
 
 
 if __name__ == "__main__":
