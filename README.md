@@ -22,6 +22,12 @@ KiBot CI workflow, locally (needs [act](https://github.com/nektos/act) and Docke
 just ci
 ```
 
+Schematic and board PDF in `outputs/` (CI also makes them, as the `outputs` artifact):
+
+```bash
+just pdf
+```
+
 All recipes:
 
 ```bash

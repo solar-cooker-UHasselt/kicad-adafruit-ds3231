@@ -41,5 +41,5 @@ tmp/
 # KiBot reports
 reports/
 
-# Generated outputs (just pdf)
-output/
+# Generated outputs (just pdf, KiBot)
+outputs/

@@ -21,13 +21,13 @@ ci:
 # Run ERC and DRC
 check: erc drc
 
-# Export the schematic to output/<board>-sch.pdf
+# Export the schematic to outputs/<board>-schematic.pdf
 sch-pdf:
-    kicad-cli sch export pdf -o output/{{ board }}-sch.pdf {{ board }}.kicad_sch
+    kicad-cli sch export pdf -o outputs/{{ board }}-schematic.pdf {{ board }}.kicad_sch
 
-# Export copper and silkscreen layers to output/<board>-pcb.pdf, one page per layer
+# Export copper and silkscreen layers to outputs/<board>-board.pdf, one page per layer
 pcb-pdf:
-    kicad-cli pcb export pdf --mode-multipage --include-border-title --layers F.Cu,B.Cu,F.Silkscreen,B.Silkscreen --common-layers Edge.Cuts -o output/{{ board }}-pcb.pdf {{ board }}.kicad_pcb
+    kicad-cli pcb export pdf --mode-multipage --include-border-title --layers F.Cu,B.Cu,F.Silkscreen,B.Silkscreen --common-layers Edge.Cuts -o outputs/{{ board }}-board.pdf {{ board }}.kicad_pcb
 
 # Export both PDFs
 pdf: sch-pdf pcb-pdf
