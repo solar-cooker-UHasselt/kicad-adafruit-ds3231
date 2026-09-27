@@ -2869,7 +2869,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/DS3231M.pdf"
 			(at 149.86 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -2880,7 +2880,7 @@
 				)
 			)
 		)
-		(property "Description" "IC RTC CLK/CALENDAR I2C 16SOIC"
+		(property "Description" "I2C real-time clock with MEMS resonator, ±5 ppm, SO-16 (300 mil)"
 			(at 149.86 92.71 0)
 			(hide yes)
 			(show_name no)
