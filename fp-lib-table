@@ -1,4 +1,4 @@
 (fp_lib_table
   (version 7)
-  (lib (name "external_footprints")(type "KiCad")(uri "${KIPRJMOD}/external/footprints")(options "")(descr ""))
+  (lib (name "solar_cooker")(type "KiCad")(uri "${KIPRJMOD}/kicad-common/footprints/solar_cooker.pretty")(options "")(descr ""))
 )

@@ -510,10 +510,10 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
-      "external_library"
+      "solar_cooker"
     ],
     "pinned_symbol_libs": [
-      "external_library"
+      "solar_cooker"
     ]
   },
   "meta": {

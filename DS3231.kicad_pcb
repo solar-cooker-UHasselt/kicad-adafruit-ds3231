@@ -1186,7 +1186,7 @@
 			)
 		)
 	)
-	(footprint "external_footprints:logo"
+	(footprint "solar_cooker:solar_cooker_logo"
 		(layer "F.Cu")
 		(uuid "6b522b55-895f-4556-b633-880ad90fe1f9")
 		(at 157 102.74)

@@ -1,0 +1,3 @@
+[submodule "kicad-common"]
+	path = kicad-common
+	url = https://github.com/solar-cooker-UHasselt/kicad-common.git
