@@ -2486,7 +2486,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "external_footprints:CR1220"
+		(property "Footprint" "Battery:BatteryHolder_Keystone_3000_1x12mm"
 			(at 184.15 105.156 90)
 			(hide yes)
 			(show_name no)
@@ -2530,7 +2530,7 @@
 				)
 			)
 		)
-		(property "MPN" "3001"
+		(property "MPN" "3000"
 			(at 184.15 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -2552,7 +2552,7 @@
 				)
 			)
 		)
-		(property "SPN" "36-3001-ND"
+		(property "SPN" "36-3000-ND"
 			(at 184.15 106.68 0)
 			(hide yes)
 			(show_name no)
