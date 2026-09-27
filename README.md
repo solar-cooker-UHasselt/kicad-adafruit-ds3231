@@ -8,6 +8,22 @@
 - [PCB source](https://github.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB)
 - [Wiki](https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout)
 
+## Libraries
+
+Own symbols and footprints come from
+[kicad-common](https://github.com/solar-cooker-UHasselt/kicad-common), a git submodule
+at `kicad-common/`. Clone with it:
+
+```bash
+git clone --recurse-submodules https://github.com/solar-cooker-UHasselt/kicad-adafruit-ds3231.git
+```
+
+Or, in a clone made without it:
+
+```bash
+just setup
+```
+
 ## Checks
 
 Needs [KiCad 10](https://www.kicad.org/download/) and [just](https://just.systems).

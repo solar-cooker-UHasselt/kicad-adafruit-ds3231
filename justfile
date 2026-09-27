@@ -6,6 +6,10 @@ board := "DS3231"
 default:
     @just --list
 
+# Fetch the kicad-common library submodule
+setup:
+    git submodule update --init
+
 # Run ERC on the schematic, full report in tmp/erc.rpt
 erc:
     kicad-cli sch erc --severity-all -o tmp/erc.rpt {{ board }}.kicad_sch
