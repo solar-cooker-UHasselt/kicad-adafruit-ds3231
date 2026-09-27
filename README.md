@@ -3,6 +3,8 @@
 [![ERC/DRC](https://img.shields.io/github/actions/workflow/status/solar-cooker-UHasselt/kicad-adafruit-ds3231/kibot.yml?branch=main&event=push&label=ERC%2FDRC)](https://github.com/solar-cooker-UHasselt/kicad-adafruit-ds3231/actions/workflows/kibot.yml)
 ![KiCad 10](https://img.shields.io/badge/KiCad-10-314CB0)
 
+- [Board page](https://solar-cooker-uhasselt.github.io/kicad-adafruit-ds3231/): 3D
+  renders, drawings, schematic and board PDF, rebuilt by CI on every push to `main`
 - [PCB source](https://github.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB)
 - [Wiki](https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout)
 
