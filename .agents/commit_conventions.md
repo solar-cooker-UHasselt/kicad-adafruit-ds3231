@@ -35,7 +35,7 @@ Choose by the change's *nature*, not by copying past messages.
 ## Scope
 
 Optional. In use: `sch` (schematic), `pcb` (board), `bom` (BOM fields), `lib`
-(`external/`). Leave the scope out when a commit spans several.
+(library tables and the `kicad-common/` submodule). Leave the scope out when a commit spans several.
 
 ## Rules
 
