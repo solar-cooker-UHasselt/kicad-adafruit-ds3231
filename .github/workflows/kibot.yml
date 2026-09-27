@@ -11,3 +11,9 @@ on:
 jobs:
   check:
     uses: solar-cooker-UHasselt/kicad-ci/.github/workflows/kibot.yml@v1
+  pages:
+    needs: check
+    permissions:
+      pages: write
+      id-token: write
+    uses: solar-cooker-UHasselt/kicad-ci/.github/workflows/pages.yml@v1
