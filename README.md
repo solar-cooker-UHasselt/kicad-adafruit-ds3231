@@ -59,6 +59,14 @@ ERC and DRC, reports in `tmp/`:
 just check
 ```
 
+DRC also checks the board maker's limits: `DS3231.kicad_dru` holds the Eurocircuits
+PCB proto rules (class 6C), a copy of the file in `kicad-common/design-rules/`. After
+updating `kicad-common`, refresh the copy (`just check` fails until then):
+
+```bash
+just rules
+```
+
 Schematic and board PDF in `outputs/` (CI also makes them, as the `outputs` artifact):
 
 ```bash

@@ -1,6 +1,8 @@
 set shell := ["bash", "-euo", "pipefail", "-c"]
 
 board := "DS3231"
+rules := "eurocircuits-proto-6c"
+rules_src := "kicad-common/design-rules/" + rules + ".kicad_dru"
 opener := if os() == "macos" { "open" } else { "xdg-open" }
 
 # List the recipes
@@ -19,12 +21,21 @@ erc:
 drc:
     kicad-cli pcb drc --severity-all --schematic-parity -o tmp/drc.rpt {{ board }}.kicad_pcb
 
+# Copy the design rules from kicad-common to <board>.kicad_dru
+rules:
+    cp {{ rules_src }} {{ board }}.kicad_dru
+
+# Check that <board>.kicad_dru matches its source in kicad-common
+[no-exit-message]
+rules-check:
+    @cmp -s {{ rules_src }} {{ board }}.kicad_dru || { echo "{{ board }}.kicad_dru is out of date, run: just rules" >&2; exit 1; }
+
 # Run the KiBot CI workflow locally with act
 ci:
     act push -W .github/workflows/kibot.yml
 
-# Run ERC and DRC
-check: erc drc
+# Check the design rules, then run ERC and DRC
+check: rules-check erc drc
 
 # Export the schematic to outputs/<board>-schematic.pdf
 sch-pdf:

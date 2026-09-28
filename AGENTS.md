@@ -23,6 +23,7 @@ first, then copied. The step list is kept outside the repo, in the workspace's
 DS3231.kicad_pro          # project: board setup, pinned libraries, revision
 DS3231.kicad_sch          # schematic
 DS3231.kicad_pcb          # board layout
+DS3231.kicad_dru          # custom DRC rules, a copy from kicad-common (just rules)
 drawing_sheet.kicad_wks   # title block and logos, this repo's own copy
 sym-lib-table             # symbol library: solar_cooker from kicad-common
 fp-lib-table              # footprint library: solar_cooker from kicad-common
@@ -40,6 +41,7 @@ renovate.json             # extends the org's shared Renovate settings
 | The circuit                                  | `DS3231.kicad_sch` in KiCad, then F8 to the board                   |
 | Placement, routing, zones                    | `DS3231.kicad_pcb` in KiCad                                         |
 | An own symbol, footprint or 3D model         | the `kicad-common` repo, then update the submodule here             |
+| The DRC rules (board maker limits)           | `kicad-common/design-rules/`, then update the submodule and `just rules` |
 | ERC/DRC in CI, the board page, KiBot outputs | the `kicad-ci` repo, then move its `v1` tag                         |
 | Which kicad-ci workflows run, and when       | `.github/workflows/`                                                |
 | Dependency updates                           | `renovate.json`, or the shared settings in the org's `.github` repo |
@@ -58,7 +60,7 @@ Needs KiCad 10 (`kicad-cli`) and just. `just ci` also needs act and Docker.
 ## Checks
 
 ```bash
-just check   # ERC and DRC with schematic parity, reports in tmp/erc.rpt and tmp/drc.rpt
+just check   # rules copy current, ERC and DRC with schematic parity, reports in tmp/
 just ci      # the KiBot workflow locally with act, for workflow changes
 ```
 
