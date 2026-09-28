@@ -1,6 +1,7 @@
 set shell := ["bash", "-euo", "pipefail", "-c"]
 
 board := "DS3231"
+opener := if os() == "macos" { "open" } else { "xdg-open" }
 
 # List the recipes
 default:
@@ -35,3 +36,8 @@ pcb-pdf:
 
 # Export both PDFs
 pdf: sch-pdf pcb-pdf
+
+# Export both PDFs and open them
+open: pdf
+    {{ opener }} outputs/{{ board }}-schematic.pdf
+    {{ opener }} outputs/{{ board }}-board.pdf

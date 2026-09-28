@@ -65,6 +65,12 @@ Schematic and board PDF in `outputs/` (CI also makes them, as the `outputs` arti
 just pdf
 ```
 
+The same, then open both in the default PDF viewer (Linux and macOS):
+
+```bash
+just open
+```
+
 The KiBot CI workflow, locally:
 
 ```bash
