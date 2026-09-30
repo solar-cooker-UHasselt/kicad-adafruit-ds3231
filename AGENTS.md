@@ -113,6 +113,9 @@ exceptions and link check:
   from `main` only: every push that changes more than Markdown, and manual runs. Pull
   requests never publish.
   <https://solar-cooker-uhasselt.github.io/kicad-adafruit-ds3231/>
+- A pushed tag like `v1.1` makes a draft release of that order, by
+  `.github/workflows/release.yml`. The tag must match the board revision. Only the
+  maintainer tags and publishes. How it works: kicad-ci's README, "Release an order".
 
 ## References
 
