@@ -18,7 +18,8 @@ files on the microSD card.
 [![3D render of the board, top side](https://solar-cooker-uhasselt.github.io/kicad-adafruit-ds3231/DS3231-render-top.png)](https://solar-cooker-uhasselt.github.io/kicad-adafruit-ds3231/)
 
 - [Board page](https://solar-cooker-uhasselt.github.io/kicad-adafruit-ds3231/): 3D
-  renders, drawings, schematic and board PDF, rebuilt by CI on every push to `main`
+  renders, drawings, schematic and board PDF, interactive BOM and the BOM CSV for
+  Eurocircuits, rebuilt by CI on every push to `main`
 - [PCB source](https://github.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB):
   Adafruit's Eagle files
 - [Adafruit guide](https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout):

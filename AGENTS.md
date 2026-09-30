@@ -108,9 +108,10 @@ exceptions and link check:
 
 ## Deployment
 
-- The board page (renders, drawings, schematic and board PDF) is published to GitHub
-  Pages by the `pages` job in `.github/workflows/kibot.yml`, from `main` only: every push
-  that changes more than Markdown, and manual runs. Pull requests never publish.
+- The board page (renders, drawings, schematic and board PDF, interactive BOM, BOM
+  CSV) is published to GitHub Pages by the `pages` job in `.github/workflows/kibot.yml`,
+  from `main` only: every push that changes more than Markdown, and manual runs. Pull
+  requests never publish.
   <https://solar-cooker-uhasselt.github.io/kicad-adafruit-ds3231/>
 
 ## References
