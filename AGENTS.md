@@ -30,7 +30,7 @@ fp-lib-table              # footprint library: solar_cooker from kicad-common
 kicad-common/             # git submodule, own symbols, footprints and 3D models
 justfile                  # ERC, DRC, PDFs, local CI
 .github/workflows/        # thin wrappers calling kicad-ci at @v1
-renovate.json             # extends the org's shared Renovate settings
+renovate.json             # org Renovate settings, plus the kicad-common submodule
 .agents/                  # commit and documentation conventions
 ```
 
@@ -77,8 +77,10 @@ Before finishing, re-read the diff and check it follows existing patterns, is mi
   applies. The KiBot image is pinned in kicad-ci, not here.
 - **kicad-happy.** Use its `kicad` skill for a design review of the schematic and
   board. House rules it does not know are in this file and `.agents/`.
-- **Renovate.** Dashboard in issue #2, PRs open on weekends. `main` restricts pushes, so
-  a Renovate PR merges with `gh pr merge … --admin`.
+- **Renovate.** Dashboard in issue #2, PRs open on weekends. It updates the
+  `kicad-common` submodule to its latest `main` (`chore(lib)`). When that PR fails on
+  the design rules, run `just rules` on its branch and commit. `main` restricts pushes,
+  so a Renovate PR merges with `gh pr merge … --admin`.
 
 ## Security
 

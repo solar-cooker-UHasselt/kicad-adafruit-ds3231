@@ -2,5 +2,16 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "local>solar-cooker-UHasselt/.github:renovate-config"
+  ],
+  "git-submodules": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "description": "kicad-common, the library submodule: chore(lib) as in the commit conventions",
+      "matchManagers": ["git-submodules"],
+      "semanticCommitType": "chore",
+      "semanticCommitScope": "lib"
+    }
   ]
 }
