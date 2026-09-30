@@ -1,0 +1,12 @@
+name: Release
+
+on:
+  push:
+    tags: [ "v*" ]
+
+jobs:
+  release:
+    name: kicad-ci
+    permissions:
+      contents: write
+    uses: solar-cooker-UHasselt/kicad-ci/.github/workflows/release.yml@v1
