@@ -79,8 +79,9 @@ Before finishing, re-read the diff and check it follows existing patterns, is mi
   board. House rules it does not know are in this file and `.agents/`.
 - **Renovate.** Dashboard in issue #2, PRs open on weekends. It updates the
   `kicad-common` submodule to its latest `main` (`chore(lib)`). When that PR fails on
-  the design rules, run `just rules` on its branch and commit. `main` restricts pushes,
-  so a Renovate PR merges with `gh pr merge … --admin`.
+  the design rules, run `just rules` on its branch and commit. Its PR needs the same
+  approval as any other (see Commit & PR guidelines): a maintainer approves it, or an
+  admin merges with `gh pr merge … --admin`.
 
 ## Security
 
@@ -99,6 +100,13 @@ Use the `propose-commit` skill: Conventional Commits, one concern per commit, th
 message handed over in `tmp/`. This repo's types, scopes and check:
 [.agents/commit_conventions.md](.agents/commit_conventions.md). **Never use em dashes or
 semicolons** in commit messages or any written output. (Our convention.)
+
+`main` is protected by two rulesets. `main-history` blocks force pushes and deletion,
+for everyone. `main-review` lets a pull request merge only with a green
+`kicad-ci / ERC, DRC and outputs` and an approval from a code owner: the `maintainers`
+team, named in [.github/CODEOWNERS](.github/CODEOWNERS). Org owners and repo admins
+bypass `main-review` and may push to `main` directly. The ruleset JSON lives outside
+the repo, in the workspace's `tmp/rulesets/`.
 
 ## Documentation
 
