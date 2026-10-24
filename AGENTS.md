@@ -105,8 +105,9 @@ semicolons** in commit messages or any written output. (Our convention.)
 for everyone. `main-review` lets a pull request merge only with a green
 `kicad-ci / ERC, DRC and outputs` and an approval from a code owner: the `maintainers`
 team, named in [.github/CODEOWNERS](.github/CODEOWNERS). Org owners and repo admins
-bypass `main-review` and may push to `main` directly. The ruleset JSON lives outside
-the repo, in the workspace's `tmp/rulesets/`.
+bypass `main-review` and may push to `main` directly. The ruleset JSON and the teams
+are recorded in the org's `.github` repo, under
+[rulesets/](https://github.com/solar-cooker-UHasselt/.github/tree/main/rulesets).
 
 ## Documentation
 
