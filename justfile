@@ -13,13 +13,15 @@ default:
 setup:
     git submodule update --init
 
-# Run ERC on the schematic, full report in tmp/erc.rpt
+# Run ERC on the schematic, fail on errors, full report in tmp/erc.rpt
 erc:
     kicad-cli sch erc --severity-all -o tmp/erc.rpt {{ board }}.kicad_sch
+    @if grep -q '; error$' tmp/erc.rpt; then echo "ERC found errors, see tmp/erc.rpt" >&2; exit 1; fi
 
-# Run DRC with schematic parity, full report in tmp/drc.rpt
+# Run DRC with schematic parity, fail on errors, full report in tmp/drc.rpt
 drc:
     kicad-cli pcb drc --severity-all --schematic-parity -o tmp/drc.rpt {{ board }}.kicad_pcb
+    @if grep -q '; error$' tmp/drc.rpt; then echo "DRC found errors, see tmp/drc.rpt" >&2; exit 1; fi
 
 # Copy the design rules from kicad-common to <board>.kicad_dru
 rules:
