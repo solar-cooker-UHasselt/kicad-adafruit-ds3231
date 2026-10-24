@@ -64,9 +64,13 @@ just check
 
 ## Contributing
 
-- Every push and pull request runs ERC and DRC in CI, through the shared workflows in
-  [kicad-ci](https://github.com/solar-cooker-UHasselt/kicad-ci). A push to `main` also
-  rebuilds the board page.
+- Work on a branch and open a pull request to `main`. It merges once CI passes and a code
+  owner (listed in [.github/CODEOWNERS](.github/CODEOWNERS)) approves it. `main`
+  accepts no force pushes.
+- CI runs ERC and DRC on every pull request, through the shared workflows in
+  [kicad-ci](https://github.com/solar-cooker-UHasselt/kicad-ci). `just check` runs the
+  same check locally. A push to `main` that changes more than Markdown also rebuilds
+  the board page.
 - Commits follow Conventional Commits, with one change per commit. Types, scopes and the
   ERC/DRC check are in
   [.agents/commit_conventions.md](.agents/commit_conventions.md).
