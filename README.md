@@ -31,8 +31,7 @@ files on the microSD card.
 
 - [KiCad 10](https://www.kicad.org/download/), to open and edit the board
 - [git](https://git-scm.com), to clone the repo with its library
-- Optional, for the checks: [just](https://just.systems), and for `just ci`
-  [act](https://github.com/nektos/act) with Docker
+- Optional, for the checks: [just](https://just.systems)
 
 ### Clone
 
@@ -47,50 +46,21 @@ git clone --recurse-submodules https://github.com/solar-cooker-UHasselt/kicad-ad
 Or, in a clone made without it:
 
 ```bash
-just setup
+git submodule update --init
 ```
 
 ## Usage
 
 Open `DS3231.kicad_pro` in KiCad 10. The schematic and board open from there.
 
-ERC and DRC, reports in `tmp/`:
+Before committing, run ERC and DRC (DRC includes the Eurocircuits PCB proto limits),
+reports in `tmp/`:
 
 ```bash
 just check
 ```
 
-DRC also checks the board maker's limits: `DS3231.kicad_dru` holds the Eurocircuits
-PCB proto rules (class 6C), a copy of the file in `kicad-common/design-rules/`. After
-updating `kicad-common`, refresh the copy (`just check` fails until then):
-
-```bash
-just rules
-```
-
-Schematic and board PDF in `outputs/` (CI also makes them, as the `outputs` artifact):
-
-```bash
-just pdf
-```
-
-The same, then open both in the default PDF viewer (Linux and macOS):
-
-```bash
-just open
-```
-
-The KiBot CI workflow, locally:
-
-```bash
-just ci
-```
-
-All recipes:
-
-```bash
-just --list
-```
+`just --list` shows the other recipes: PDFs, and the CI workflow run locally.
 
 ## Contributing
 
