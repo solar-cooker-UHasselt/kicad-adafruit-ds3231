@@ -137,3 +137,5 @@ Adafruit and open-source hardware by purchasing products from
 
 [CC BY-SA 4.0](LICENSE). Adafruit's original design is licensed CC BY-SA 3.0, which
 allows adaptations like this port under a later version with the same terms.
+
+<!-- Test of the branch protection, closed without merging -->
