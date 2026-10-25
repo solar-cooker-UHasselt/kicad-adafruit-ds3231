@@ -11,8 +11,9 @@ Every commit leaves ERC and DRC no worse than the commit before it:
 just check
 ```
 
-It runs ERC and DRC with `kicad-cli` and writes the reports to `tmp/`. For a change to
-the CI workflow, also run `just ci`.
+It checks that `DS3231.kicad_dru` matches its source in kicad-common, then runs ERC and
+DRC with `kicad-cli` and writes the reports to `tmp/`. For a change to the CI workflow,
+also run `just ci`.
 
 Compare the violation counts with the previous commit. A commit that fixes violations
 says which ones in its body.
@@ -35,7 +36,8 @@ Choose by the change's *nature*, not by copying past messages.
 ## Scope
 
 Optional. In use: `sch` (schematic), `pcb` (board), `bom` (BOM fields), `lib`
-(library tables and the `kicad-common/` submodule). Leave the scope out when a commit spans several.
+(library tables and the `kicad-common/` submodule). Leave the scope out when a commit
+spans several.
 
 ## Rules
 
