@@ -30,6 +30,7 @@ fp-lib-table              # footprint library: solar_cooker from kicad-common
 kicad-common/             # git submodule, own symbols, footprints and 3D models
 justfile                  # ERC, DRC, PDFs, local CI
 .github/workflows/        # thin wrappers calling kicad-ci at @v1
+.github/CODEOWNERS        # who approves pull requests
 renovate.json             # org Renovate settings, plus the kicad-common submodule
 .agents/                  # commit and documentation conventions
 ```
