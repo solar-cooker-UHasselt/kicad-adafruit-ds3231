@@ -104,13 +104,10 @@ message handed over in `tmp/`. This repo's types, scopes and check:
 [.agents/commit_conventions.md](.agents/commit_conventions.md). **Never use em dashes or
 semicolons** in commit messages or any written output. (Our convention.)
 
-`main` is protected by two rulesets. `main-history` blocks force pushes and deletion,
-for everyone. `main-review` lets a pull request merge only with a green
-`kicad-ci / ERC, DRC and outputs` and an approval from a code owner: the `maintainers`
-team, named in [.github/CODEOWNERS](.github/CODEOWNERS). Org owners and repo admins
-bypass `main-review` and may push to `main` directly. The ruleset JSON and the teams
-are recorded in the org's `.github` repo, under
-[rulesets/](https://github.com/solar-cooker-UHasselt/.github/tree/main/rulesets).
+Pull requests follow the org's
+[CONTRIBUTING.md](https://github.com/solar-cooker-UHasselt/.github/blob/main/.github/CONTRIBUTING.md),
+enforced by the org's
+[rulesets](https://github.com/solar-cooker-UHasselt/.github/tree/main/rulesets).
 
 ## Documentation
 
