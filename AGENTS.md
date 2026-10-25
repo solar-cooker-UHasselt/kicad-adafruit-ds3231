@@ -83,6 +83,8 @@ Before finishing, re-read the diff and check it follows existing patterns, is mi
   the design rules, run `just rules` on its branch and commit. Its PR needs the same
   approval as any other (see Commit & PR guidelines): a maintainer approves it, or an
   admin merges with `gh pr merge … --admin`.
+- **Lint, through kicad-ci.** `.github/workflows/lint.yml` runs actionlint, with
+  ShellCheck on the `run:` scripts, when a file in `.github/workflows/` changes.
 
 ## Security
 
