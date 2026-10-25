@@ -27,7 +27,8 @@ Each document and the one type it is:
 - **KiCad project name.** The project and its files are named after the board's main
   part, written as the part is printed: `DS3231.kicad_pro`, `.kicad_sch`, `.kicad_pcb`.
   KiCad names every output after the project (the PDFs, the renders on the board page),
-  so a rename would change the board page's file URLs.
+  so a rename would change the board page's file URLs. `DS3231.kicad_dru` has the
+  project's name too, as KiCad only reads the rules file named after the project.
 - **KiCad's own names.** `sym-lib-table` and `fp-lib-table` are the names KiCad looks
   for.
 
