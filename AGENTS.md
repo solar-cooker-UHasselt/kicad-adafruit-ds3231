@@ -37,15 +37,15 @@ renovate.json             # org Renovate settings, plus the kicad-common submodu
 
 ## Where things live
 
-| To change…                                   | Edit                                                                |
-| -------------------------------------------- | ------------------------------------------------------------------- |
-| The circuit                                  | `DS3231.kicad_sch` in KiCad, then F8 to the board                   |
-| Placement, routing, zones                    | `DS3231.kicad_pcb` in KiCad                                         |
-| An own symbol, footprint or 3D model         | the `kicad-common` repo, then update the submodule here             |
+| To change…                                   | Edit                                                                     |
+| -------------------------------------------- | ------------------------------------------------------------------------ |
+| The circuit                                  | `DS3231.kicad_sch` in KiCad, then F8 to the board                        |
+| Placement, routing, zones                    | `DS3231.kicad_pcb` in KiCad                                              |
+| An own symbol, footprint or 3D model         | the `kicad-common` repo, then update the submodule here                  |
 | The DRC rules (board maker limits)           | `kicad-common/design-rules/`, then update the submodule and `just rules` |
-| ERC/DRC in CI, the board page, KiBot outputs | the `kicad-ci` repo, then move its `v1` tag                         |
-| Which kicad-ci workflows run, and when       | `.github/workflows/`                                                |
-| Dependency updates                           | `renovate.json`, or the shared settings in the org's `.github` repo |
+| ERC/DRC in CI, the board page, KiBot outputs | the `kicad-ci` repo, then move its `v1` tag                              |
+| Which kicad-ci workflows run, and when       | `.github/workflows/`                                                     |
+| Dependency updates                           | `renovate.json`, or the shared settings in the org's `.github` repo      |
 
 The maintainer edits the schematic and board in KiCad. Agents read the files, run the
 checks, and change text files (`sym-lib-table`, `.kicad_pro` fields, workflows, docs).
