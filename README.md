@@ -64,15 +64,14 @@ just check
 
 ## Contributing
 
-- Work on a branch and open a pull request to `main`. It merges once CI passes and a code
-  owner (listed in [.github/CODEOWNERS](.github/CODEOWNERS)) approves it. `main`
-  accepts no force pushes.
+Branches, pull requests, approval and commits work as in every repo of the org, see
+[CONTRIBUTING.md](https://github.com/solar-cooker-UHasselt/.github/blob/main/.github/CONTRIBUTING.md).
+Specific to this repo:
+
 - CI runs ERC and DRC on every pull request, through the shared workflows in
-  [kicad-ci](https://github.com/solar-cooker-UHasselt/kicad-ci). `just check` runs the
-  same check locally. A push to `main` that changes more than Markdown also rebuilds
-  the board page.
-- Commits follow Conventional Commits, with one change per commit. Types, scopes and the
-  ERC/DRC check are in
+  [kicad-ci](https://github.com/solar-cooker-UHasselt/kicad-ci). A push to `main` that
+  changes more than Markdown also rebuilds the board page.
+- Types, scopes and the ERC/DRC check for commits are in
   [.agents/commit_conventions.md](.agents/commit_conventions.md).
 - This is the reference repo for the other board repos: a change to the board setup,
   CI or docs is made and tested here first.
