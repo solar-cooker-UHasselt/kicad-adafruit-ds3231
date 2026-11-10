@@ -15,7 +15,7 @@ checked by KiBot in CI through the shared workflows in
 This is the reference repo for the other board repos (bme680, max31865, microsd,
 testing-station): every change to the board setup, CI or docs is made and tested here
 first, then copied. The step list is kept outside the repo, in the private context
-repo at the workspace root: `notes/kicad/kicad10_migration.md`.
+repo at the workspace root: `notes/boards/README.md`.
 
 ## Repository map
 
